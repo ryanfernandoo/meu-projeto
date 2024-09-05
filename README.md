@@ -58,3 +58,43 @@ atraso(400);
 Andar(5);
 }
 se(estado ==0) {
+Andar(2);
+atraso(500);
+Andar(4);
+atraso(300);
+Andar(5);
+}
+atraso(1000);
+}
+outro{
+Andar(1)
+}
+}
+
+vazio Andar(Inteirodireção) {
+se(direção ==1) {//anda pra frente
+Escrita digital(B1A, ALTo);
+Escrita digital(B1B, BAIXO);
+Escrita digital(A1A, ALTO);
+Escrita digital(A1B, BAIXO);
+}
+
+se(direção ==3) {//faz curva pra direita
+Escrita digital(B1A, BAIXO);
+Escrita digital(B1B, ALTO);
+Escrita digital(A1A, BAIXO);
+Escrita digital(A1B, ALTO);
+}
+
+se(direção ==4) {//faz curva pra esquerda
+Escrita digital(B1A, ALTO);
+Escrita digital(B1B, BAIXO);
+Escrita digital(A1A, ALTO);
+Escrita digital(A1B, BAIXO);
+}
+
+se(direção ==4) {//faz curva pra esquerda
+Escrita digital(B1A, BAIXO);
+Escrita digital(B1B, ALTO);
+Escrita digital(A1A, ALTO);
+Escrita digital(A1B, BAIXO);
